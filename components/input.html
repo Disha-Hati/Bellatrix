@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/components/styles.css">
+</head>
+<body>
+    <!--Normal Register Form-->
+    <form>
+        <h2>Register Form/Stacked Form</h2>
+        <div class="container">
+      
+          <label for="email"><b>Email</b></label>
+          <input type="email" placeholder="Enter Email" name="email" id="email" required><br>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+      
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+          <button type="submit" class="btn">Register</button>
+        </div>
+      </form>
+
+    <!--Forms with Icons-->
+    <form>
+        <h2>Form with Icons</h2>
+        <div class="input-container">
+          <i class="fa fa-user icon"></i>
+          <input class="input-field" type="text" placeholder="Username" name="usrnm" required>
+        </div>
+      
+        <div class="input-container">
+          <i class="fa fa-envelope icon"></i>
+          <input class="input-field" type="email" placeholder="Email" name="email" required>
+        </div>
+      
+        <div class="input-container">
+          <i class="fa fa-key icon"></i>
+          <input class="input-field" type="password" placeholder="Password" name="psw" required>
+        </div>
+      
+        <button type="submit" class="btn">Register</button>
+      </form>
+      
+      <!--Ressponsive Form-->
+      <h2>Responsive Form</h2>
+      <div class="container">
+        <form>
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Country</label>
+            </div>
+            <div class="col-75">
+              <select id="country" name="country">
+                  <option value="india">India</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+
+      <!--Pop up Form-->
+
+
+      <h2>Pop Up Form</h2>
+      <div class="form-popup" id="myForm">
+        <form class="form-container">
+          <h1>Login</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="email" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit" class="btn">Login</button>
+          <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+
+      <!--Validation and error-->
+      
+
+
+
+      <script src="/components/app.js"></script>
+</body>
+</html>

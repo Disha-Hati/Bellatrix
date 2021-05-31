@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.left-list{
+    text-align:center;
+}
+
+.nav-right{
+    float: right;
+    padding: 0.5rem;
+}
+
+body, html {
+    height: 75%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/Cropped.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 35%;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.author{
+    font-weight: bolder;
+    font-style: normal;
+}
+
+/* Dark Theme */
+html[data-theme='dark'] {
+    background: #000;
+    filter: invert(1) hue-rotate(180deg)
+}
+
+/* Main Text */
+.center-text{
+    display: block;
+    width: 35%;
+    position: absolute;
+    left: 34%;
+    top: 75%;
+    font-size: 25px;
+    word-spacing: 2%;
+}
+
+/* Get Started Button */
+.button-pill{
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+ 
+
+  .components{
+      font-size: 20px;
+  }
+
+  h2{
+      color: #137B48;
+      font-weight: bold;
+  }
+
+  /*Grid Layout Starts */
+.thick-navbar{
+    grid-area: nav;
+}
+
+#menu-check{
+    grid-area: check;
+}
+
+  .components{
+    grid-area: components;
+}
+
+.getting-started{
+    grid-area: gs;
+}
+
+.avatar-layout{
+    grid-area: avatar;
+}
+
+.alert-layout{
+    grid-area: alert;
+}
+
+.badge-layout{
+    grid-area: badge;
+}
+
+.button-layout{
+    grid-area: button;
+}
+
+.card-layout{
+    grid-area: card;
+}
+
+.normal-card{
+    grid-area: n-card;
+}
+
+.normal-code{
+    grid-area: n-code;
+}
+
+.input-layout{
+    grid-area: input;
+}
+
+.image-layout{
+    grid-area: img;
+}
+
+.list-layout{
+    grid-area: list;
+}
+
+.navigation-layout{
+    grid-area: navi;
+}
+
+.modal-layout{
+    grid-area: modal;
+}
+
+.rating-layout{
+    grid-area: rate;
+}
+
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+    "nav nav nav"
+    "check check check"
+    "components gs gs"
+    "components avatar .."
+    "components alert .."
+    "components badge .."
+    "components button .."
+    "components modal .."
+    "components rate .."
+    "components card .."
+    "components img .."
+    "components input .."
+    "components list .."
+    "components navi .."
+
+}
+
+/* Responsiveness on sidemenu */
+.components{
+    position:relative;
+    width: 240px;
+    height:fit-content;
+    background-color:rgba(235, 232, 232, 0.897);
+    transition: all .5s ease;
+}
+
+.components h2{
+    padding-left: 1.5rem;
+}
+
+.components a{
+    height: 50px;
+    line-height: 50px;
+    border-left: 5px solid transparent;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+.components a:hover{
+    border-bottom: 5px solid #137B48;
+}
+
+#check{
+    display: none;
+}
+
+label #menu-btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    background-color: #137B48;
+    color: #fff;
+    transition: all .5s ease;
+    visibility: hidden;
+}
+
+label #cancel{
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked ~ label #menu-btn{
+    margin-left: 245px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked ~ label #cancel{
+    margin-left: 245px;
+    opacity: 1;
+    visibility:visible;
+}
+
+#check:checked ~ .components{
+    left: 0;
+}
+
+@media (max-width: 860px) {
+    .components{
+        left: -240px;
+    }
+    label #menu-btn, label #cancel{
+        visibility: visible;
+    }
+
+    .body-layout{
+        
+       
+    }
+    
+}
+
+/* Code Box Design */
+.code-box{
+    /* margin-left: 0.5 rem; */
+    border-radius: 0.4rem;
+    padding: 1.5rem;
+    background-color: rgb(230, 230, 230);
+    box-shadow: 1rem;
+    border:solid 0.2px rgb(187, 187, 187);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* Copy to Clipboard */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .copy-clip{
+    background-color: #137B48;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    float: right;
+  }
+
+  /* Code Snippet */
+  .snippet{
+    margin-left: -100px;
+  }
+
