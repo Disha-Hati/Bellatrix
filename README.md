@@ -17,5 +17,5 @@
 - Text Utilities
 - Toast/Notify/Snackbar
 
-App Link:
+App Link: https://lib-bellatrix.netlify.app/
 

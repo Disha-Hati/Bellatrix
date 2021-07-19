@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="/images/icons8-star-50.png">
+    <link rel="stylesheet" href="/components/styles.css">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Bellatrix-Docs</title>
+</head>
+<body>
+   <div class="layout">
+
+    <div class="thick-navbar">
+      <nav>
+          <div class="thick-nav-heading"><img src="/images/icons8-star-50.png" class="avatar">Bellatrix</div>
+          <ul class="left-list" >
+              <li class="inline-top"><a href="/index.html" class="link">Home</a> </li>
+              <li class="inline-top"><a href="#" class="link link-active">Docs</a> </li>
+              <li class="inline-top"><a href="https://www.linkedin.com/in/disha-hati-a718a3199/" class="link">Connect</a> </li>
+
+           <!--   <button class="nav-right" onclick="toggleTheme('light');">Light ☀️</button>
+              <button class="nav-right" onclick="toggleTheme('dark');" style="background-color: black; color: white;" >Dark 🌙</button> -->
+          </ul>
+      </nav>
+    </div>
+
+    <input type="checkbox" id="check">
+    <label for="check" id="menu-check">
+      <i class="fa fa-bars" id="menu-btn"></i>
+    <i class="fa fa-close" id="cancel"></i>
+    </label>
+
+
+   <div class="components">
+     <h2>Components</h2>
+     <div class="components-items">
+     <ul>
+       <li style="list-style: none;"><a href="#" style="text-decoration: none; color: black">Getting Started</a></li>
+       <li style="list-style: none;"><a onclick="avatarFunction()"  href="#" style="text-decoration: none; color: black;">Avatar</a></li>
+       <li style="list-style: none;"><a onclick="alertFunction()" href="#" style="text-decoration: none; color: black">Alert</a></li>
+       <li style="list-style: none;"><a onclick="badgeFunction()" href="#" style="text-decoration: none; color: black">Badge</a></li>
+       <li style="list-style: none;"><a onclick="buttonFunction()" href="#" style="text-decoration: none; color: black">Buttons</a></li>
+       <li style="list-style: none;"><a onclick="modalFunction()" href="#" style="text-decoration: none; color: black">Modal</a></li>
+       <li style="list-style: none;"><a onclick="ratingFunction()" href="#" style="text-decoration: none; color: black">Rating</a></li>
+       <li style="list-style: none;"><a onclick="cardFunction()" href="#" style="text-decoration: none; color: black">Cards</a></li>
+       <li style="list-style: none;"><a onclick="inputFunction()" href="#" style="text-decoration: none; color: black">Input</a></li>
+       <li style="list-style: none;"><a onclick="listFunction()" href="#" style="text-decoration: none; color: black">Lists</a></li>
+       <li style="list-style: none;"><a onclick="navFunction()" href="#" style="text-decoration: none; color: black">Navigation</a></li>
+      
+     </ul>
+  </div> 
+   </div>
+
+  <div class="body-lay">
+    <div class="getting-started">
+      <h2>Getting Started</h2>
+    To use <b>Bellatrix</b>, use:
+    </div>
+    <div class="code-box">
+      <button class="copy-clip" onclick="myFunction()">Copy</button>
+      <div class="snippet">
+        <pre>
+            <code>
+                <span><</span><span>link</span> <span>href</span><span>=</span><span>"</span> <span>https://bellatrix-library.netlify.app/components/styles.css</span> <span>"</span><span>rel</span><span>=</span><span>"</span><span>stylesheet</span><span>"</span><span>></span>
+            </code>
+        </pre>
+      </div>
+
+      <div class="snippet">
+        <pre>
+            <code>
+                <span><</span><span>link</span> <span>href</span><span>=</span><span>"</span> <span>https://bellatrix-library.netlify.app/components/app.js</span> <span>"</span><span>rel</span><span>=</span><span>"</span><span>stylesheet</span><span>"</span><span>></span>
+            </code>
+        </pre>
+      </div>
+    <!-- </div> -->
+    </div>
+  </div>
+  
+    <!--Avatar-->
+    <div class="avatar-layout"><h2>Avatar</h2>
+      <div ><p>The Avatar component is used to represent a user, and displays the profile picture, initials or fallback icon.</p></div>
+      <div><h3>Example:</h3><img src="/images/icons8-butterfly-50.png" class="avatar"> <img src="/images/Image2.svg" class="avatar"></div>
+      <div><h3>Code:</h3>
+      <div class="code-box">
+        <button class="copy-clip" onclick="myFunction()">Copy</button>
+        <pre>
+          <code>
+              <span><</span><span>img</span> <span>src</span><span>=</span><span>"</span><span>/images/icons8-butterfly-50.png</span><span>"</span> <span>class</span><span>=</span><span>"</span><span>avatar</span><span>"</span><span>></span>
+
+              <span><</span><span>img</span> <span>src</span><span>=</span><span>"</span><span>/images/Image2.svg</span><span>"</span> <span>class</span><span>=</span><span>"</span><span>avatar</span><span>"</span><span>></span>
+          </code>
+      </pre>
+      
+      </div>
+      </div>
+    </div>
+  
+    <!--Alert-->
+    
+   <div class="alert-layout"><h2>Alerts</h2>
+    <p>Alert messages can be used to notify the user about something special: danger, success, information or warning.</p>
+    <div><h3>Example:</h3>
+        <div class="alert-danger">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            Danger! Indicates a dangerous or potentially negative action.
+          </div>
+          <div><h3>Code:</h3>
+            <div class="code-box">
+              <button class="copy-clip" onclick="myFunction()">Copy</button>
+             <div class="snippet">
+              <pre>
+                <code>
+                   <span><</span><span>div</span> <span>class</span> <span>=</span><span>"</span><span>alert-danger</span><span>"</span><span>></span>
+                       <span><</span> <span>span</span> <span>class</span> <span>=</span><span>"</span><span>closebtn</span><span>"</span> <span>onclick</span>="this.parentElement.style.display='none';" <span>></span><span>&</span><span>times</span><span>;</span><span><</span><span>span</span><span>></span>
+                       <span> Danger! Indicates a dangerous or potentially negative action.</span>
+                    <span><</span><span>div</span><span>></span>
+                      </div>
+                </code>
+            </pre>
+             </div>
+            </div>
+        
+          <br>
+    
+          <div class="alert-success">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            Success! Indicates a successful or positive action.
+          </div>
+          <div><h3>Code:</h3>
+            <div class="code-box">
+              <button class="copy-clip" onclick="myFunction()">Copy</button>
+              <div class="snippet">
+                <pre>
+                    <code>
+                       <span><</span><span>div</span> <span>class</span> <span>=</span><span>"</span><span>alert-success</span><span>"</span><span>></span>
+                           <span><</span> <span>span</span> <span>class</span> <span>=</span><span>"</span><span>closebtn</span><span>"</span> <span>onclick</span>="this.parentElement.style.display='none';" <span>></span><span>&</span><span>times</span><span>;</span><span><</span><span>span</span><span>></span>
+                           <span> Success! Indicates a successful or positive action.</span>
+                        <span><</span><span>div</span><span>></span>
+                          </div>
+                    </code>
+                </pre>
+            </div>
+            </div>
+          </div>
+          <br>
+    
+          <div class="alert-info">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            Info! Indicates a neutral informative change or action.
+          </div>
+          <div><h3>Code:</h3>
+            <div class="code-box">
+              <button class="copy-clip" onclick="myFunction()">Copy</button>
+              <div class="snippet">
+                <pre>
+                  <code>
+                     <span><</span><span>div</span> <span>class</span> <span>=</span><span>"</span><span>alert-info</span><span>"</span><span>></span>
+                         <span><</span> <span>span</span> <span>class</span> <span>=</span><span>"</span><span>closebtn</span><span>"</span> <span>onclick</span>="this.parentElement.style.display='none';" <span>></span><span>&</span><span>times</span><span>;</span><span><</span><span>span</span><span>></span>
+                         <span> Info! Indicates a neutral informative change or action.</span>
+                      <span><</span><span>div</span><span>></span>
+                        </div>
+                  </code>
+              </pre>
+              </div>
+            </div>
+      
+          <br>
+    
+          <div class="alert-warning">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';" >&times;</span>
+            Warning! Indicates a warning that might need attention.
+          </div>
+          <div><h3>Code:</h3>
+            <div class="code-box">
+              <button class="copy-clip" onclick="myFunction()">Copy</button>
+             <div class="snippet">
+              <pre>
+                <code>
+                   <span><</span><span>div</span> <span>class</span> <span>=</span><span>"</span><span>alert-warning</span><span>"</span><span>></span>
+                       <span><</span> <span>span</span> <span>class</span> <span>=</span><span>"</span><span>closebtn</span><span>"</span> <span>onclick</span>="this.parentElement.style.display='none';" <span>></span><span>&</span><span>times</span><span>;</span><span><</span><span>span</span><span>></span>
+                       <span> Warning! Indicates a warning that might need attention.</span>
+                    <span><</span><span>div</span><span>></span>
+                      </div>
+                </code>
+            </pre>
+             </div>
+          </div>
+    </div>
+  
+  
+  <!--Badges-->
+    <div class="badge-layout"><h2>Badges</h2>
+    <p> Badges are used to highlight an item's status for quick recognition.Also used for small count and labeling component</p>
+    <div><h3>Example:</h3>
+        <a href="#" class="notification">
+            <span>Messages</span>
+            <span class="badge-icon">5</span>
+          </a>
+    </div>
+    <div><h3>Code:</h3>
+      <div class="code-box">
+        <button class="copy-clip" onclick="myFunction()">Copy</button>
+        <pre>
+          <code>
+              <span><</span><span>a</span> <span>href</span><span>=</span><span>"</span><span>#</span><span>"</span> <span>class</span><span>=</span><span>"</span><span>notification</span><span>"</span><span>></span>
+              <span><</span><span>span</span><span>></span><span>Messages</span><span><</span><span>/</span><span>span</span><span>></span>
+              <span><</span><span>span</span> <span>class</span><span>=</span><span>"</span><span>badge-icon</span><span>"</span><span>></span><span>3</span><span><</span><span>/</span><span>span</span><span>></span>
+              <span><</span><span>/</span><span>a</span><span>></span>
+          </code>
+      </pre>
+      </div>
+    </div>
+    </div>
+  
+  
+    <!--Button-->
+    <div class="button-layout"><h2>Buttons</h2>
+    <p>The Button component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.</p>
+    <div><h3>Example:</h3>
+        <div>
+            <h3>Primary Buttons</h3>
+            <button class="prim-success">Success</button>
+            <button class="prim-info">Info</button>
+            <button class="prim-warning">Warning</button>
+            <button class="prim-danger">Danger</button>
+            <button class="prim-default">Default</button>
+        </div>
+        <div><h3>Code:</h3>
+          <div class="code-box">
+            <button class="copy-clip" onclick="myFunction()">Copy</button>
+            <pre>
+              <code>
+                  <span><</span><span>div</span><span>></span>
+                      <span><</span><span>button</span> <span>class</span><span>=</span><span>"</span><span>prim-success</span><span>"</span><span>></span><span>Success</span><span><</span><span>/</span><span>button</span><span>></span>
+                      <span><</span><span>button</span> <span>class</span><span>=</span><span>"</span><span>prim-info</span><span>"</span><span>></span><span>Info</span><span><</span><span>/</span><span>button</span><span>></span>
+                      <span><</span><span>button</span> <span>class</span><span>=</span><span>"</span><span>prim-warning</span><span>"</span><span>></span><span>Warning</span><span><</span><span>/</span><span>button</span><span>></span>
+                      <span><</span><span>button</span> <span>class</span><span>=</span><span>"</span><span>prim-danger</span><span>"</span><span>></span><span>Danger</span><span><</span><span>/</span><span>button</span><span>></span>
+                      <span><</span><span>button</span> <span>class</span><span>=</span><span>"</span><span>prim-default</span><span>"</span><span>></span><span>Default</span><span><</span><span>/</span><span>button</span><span>></span>
+                   <span><</span><span>/</span><span>div</span><span>></span>
+              </code>
+          </pre>
+          </div>
+        </div>
+  
+        <div>
+            <h3>Secondary Buttons</h3>
+            <button class="btn-success">Success</button>
+            <button class="btn-info">Info</button>
+            <button class="btn-warning">Warning</button>
+            <button class="btn-danger">Danger</button>
+            <button class="btn-default">Default</button>
+        </div>
+        <div><h3>Code:</h3>
+          <div class="code-box">
+            <button class="copy-clip" onclick="myFunction()">Copy</button>
+            <pre>
+              <code>
+                  <span><</span><span>div</span><span>></span>
+                      <span><</span><span>button</span> <span>class</span><span>=</span><span>"</span><span>btn-success</span><span>"</span><span>></span><span>Success</span><span><</span><span>/</span><span>button</span><span>></span>
+                      <span><</span><span>button</span> <span>class</span><span>=</span><span>"</span><span>btn-info</span><span>"</span><span>></span><span>Info</span><span><</span><span>/</span><span>button</span><span>></span>
+                      <span><</span><span>button</span> <span>class</span><span>=</span><span>"</span><span>btn-warning</span><span>"</span><span>></span><span>Warning</span><span><</span><span>/</span><span>button</span><span>></span>
+                      <span><</span><span>button</span> <span>class</span><span>=</span><span>"</span><span>btn-danger</span><span>"</span><span>></span><span>Danger</span><span><</span><span>/</span><span>button</span><span>></span>
+                      <span><</span><span>button</span> <span>class</span><span>=</span><span>"</span><span>btn-default</span><span>"</span><span>></span><span>Default</span><span><</span><span>/</span><span>button</span><span>></span>
+                   <span><</span><span>/</span><span>div</span><span>></span>
+              </code>
+          </pre>
+          </div>
+        </div>
+  
+       <div>
+            <h3>Buttons with icons</h3>
+            <a href="#" class="btn-link"><i class="fa fa-home"></i> Home</a>
+            <a href="#" class="btn-link"><i class="fa fa-bars"></i> Menu</a>
+            <a href="#" class="btn-link"><i class="fa fa-trash"></i> Trash</a>
+            <a href="#" class="btn-link"><i class="fa fa-close"></i> Close</a>
+        </div>
+        <div><h3>Code:</h3>
+          <div class="code-box">
+            <button class="copy-clip" onclick="myFunction()">Copy</button>
+            <pre>
+              <code>
+                  <span><</span><span>link</span> <span>rel</span><span>=</span><span>"stylesheet"</span> <span>href</span><span>=</span><span>"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"</span><span>></span>
+  
+                  <span><</span><span>div</span><span>></span>
+                      <span><</span><span>a</span> <span>href</span><span>=</span><span>"</span><span>#</span><span>"</span> <span>class</span><span>=</span><span>"btn-link"</span><span>></span><span><</span><span>i</span> <span>class</span><span>=</span><span>"fa fa-home"</span><span>></span><span><</span><span>/</span><span>i</span><span>></span>Home<span><</span><span>/</span><span>a</span><span>></span>
+                      <span><</span><span>a</span> <span>href</span><span>=</span><span>"</span><span>#</span><span>"</span> <span>class</span><span>=</span><span>"btn-link"</span><span>></span><span><</span><span>i</span> <span>class</span><span>=</span><span>"fa fa-bars"</span><span>></span><span><</span><span>/</span><span>i</span><span>></span>Menu<span><</span><span>/</span><span>a</span><span>></span>
+                      <span><</span><span>a</span> <span>href</span><span>=</span><span>"</span><span>#</span><span>"</span> <span>class</span><span>=</span><span>"btn-link"</span><span>></span><span><</span><span>i</span> <span>class</span><span>=</span><span>"fa fa-trash"</span><span>></span><span><</span><span>/</span><span>i</span><span>></span>Trash<span><</span><span>/</span><span>a</span><span>></span>
+                      <span><</span><span>a</span> <span>href</span><span>=</span><span>"</span><span>#</span><span>"</span> <span>class</span><span>=</span><span>"btn-link"</span><span>></span><span><</span><span>i</span> <span>class</span><span>=</span><span>"fa fa-close"</span><span>></span><span><</span><span>/</span><span>i</span><span>></span>Close<span><</span><span>/</span><span>a</span><span>></span>
+                      <span><</span><span>a</span> <span>href</span><span>=</span><span>"</span><span>#</span><span>"</span> <span>class</span><span>=</span><span>"btn-link"</span><span>></span><span><</span><span>i</span> <span>class</span><span>=</span><span>"fa fa-folder"</span><span>></span><span><</span><span>/</span><span>i</span><span>></span>Folder<span><</span><span>/</span><span>a</span><span>></span>
+                   <span><</span><span>/</span><span>div</span><span>></span>
+              </code>
+          </pre>
+          </div>
+        </div>
+  
+        <div>
+            <h3>Pill Buttons</h3>
+            <button class="button-pill">Pill Button</button>
+        </div>
+        <div><h3>Code:</h3>
+          <div class="code-box">
+            <button class="copy-clip" onclick="myFunction()">Copy</button>
+            <pre>
+              <code>
+                  <span><</span><span>div</span><span>></span>
+                      <span><</span><span>buttun</span> <span>class</span><span>=</span><span>"</span><span>button-pill</span><span>"</span><span>></span><span>Pill Button</span><span><</span><span>/</span><span>button</span><span>></span>
+                  <span><</span><span>/</span><span>div</span><span>></span>
+              </code>
+          </pre>
+          </div>
+        </div>
+    </div>
+    </div>
+  
+    
+    <!--Modal-->
+    <div class="modal-layout"><h2>Modal</h2>
+    <p>A modal is a dialog box/popup window that is displayed on top of the current page</p>
+    <div><h3>Example:</h3>
+        <button id="myModalBtn">Open Modal</button>
+        <div id="myModal" class="modal">
+         <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Hi I'm Bellatrix</p>
+        </div>
+       </div>
+    <div><h3>Code:</h3>
+      <div class="code-box">
+        <button class="copy-clip" onclick="myFunction()">Copy</button>
+        <div class="snippet" style="margin-left: 0px;">
+          <pre>
+            <code>  
+        <span><</span><span>h2</span><span>></span><span>Text Modal</span><span><</span>/<span>h2</span><span>></span>
+        <span><</span><span>button id</span><span>=</span><span>"</span><span>myModalBtn</span><span>"</span><span>></span><span>Open Modal</span><span><</span><span>/</span><span>button</span><span>></span>
+        <span><</span><span>div id</span><span>=</span><span>"</span><span>myModal</span><span>"</span><span>class</span><span>=</span><span>"</span><span>modal</span><span>"</span><span>></span>
+        <span><</span><span>div class</span><span>=</span><span>"</span><span>modal-content</span><span>"</span><span>></span> 
+        <span><</span><span>class</span><span>=</span><span>"</span><span>close</span><span>"</span><span>></span><span>&</span><span>times;</span><span><</span><span>/</span><span>span</span><span>></span>
+        <span><</span><span>p</span><span>></span><span>Hi I'm Bellatrix</span> <span><</span><span>/</span><span>p</span><span>></span>
+        <span><</span><span>/</span><span>div</span><span>></span>
+     </code>
+        </pre>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+  
+    <!--Rating-->
+    <div class="rating-layout"><h2>Rating</h2>
+    <p>Used to create 5 star rating widget in your webpage</p>
+    <div><h3>Example:</h3>
+        <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+          <br>
+          <br>
+        <div><h3>Code:</h3>
+          <div class="code-box">
+            <button class="copy-clip" onclick="myFunction()">Copy</button>
+            <pre>
+              <code>
+                  <span><</span><span>meta</span> <span>http-equiv</span><span>=</span><span>"</span><span>X-UA-Compatible</span><span>"</span> <span>content</span><span>=</span><span>"</span><span>IE-edge</span><span>"</span><span>></span>
+  
+                  <span><</span><span>div</span> <span>class</span><span>=</span><span>"</span><span>rate</span><span>"</span><span>></span>
+                  <span><</span><span>input</span> <span>type</span><span>=</span><span>"</span><span>radio</span><span>"</span> <span>id</span><span>=</span><span>"</span><span>star5</span><span>"</span> <span>name</span><span>=</span><span>"</span><span>rate</span><span>"</span> <span>value</span><span>=</span><span>"</span><span>5</span><span>"</span> <span>/</span><span>></span>
+                  <span><</span><span>label</span> <span>for</span><span>=</span><span>"</span><span>star5</span><span>"</span> <span>title</span><span>=</span><span>"</span><span>text</span><span>"</span><span>></span><span>5 stars</span><span><</span><span>/</span><span>label</span><span>></span>
+                  <span><</span><span>div</span> <span>class</span><span>=</span><span>"</span><span>rate</span><span>"</span><span>></span>
+                  <span><</span><span>input</span> <span>type</span><span>=</span><span>"</span><span>radio</span><span>"</span> <span>id</span><span>=</span><span>"</span><span>star4</span><span>"</span> <span>name</span><span>=</span><span>"</span><span>rate</span><span>"</span> <span>value</span><span>=</span><span>"</span><span>4</span><span>"</span> <span>/</span><span>></span>
+                  <span><</span><span>label</span> <span>for</span><span>=</span><span>"</span><span>star4</span><span>"</span> <span>title</span><span>=</span><span>"</span><span>text</span><span>"</span><span>></span><span>4 stars</span><span><</span><span>/</span><span>label</span><span>></span>
+                  <span><</span><span>div</span> <span>class</span><span>=</span><span>"</span><span>rate</span><span>"</span><span>></span>
+                  <span><</span><span>input</span> <span>type</span><span>=</span><span>"</span><span>radio</span><span>"</span> <span>id</span><span>=</span><span>"</span><span>star3</span><span>"</span> <span>name</span><span>=</span><span>"</span><span>rate</span><span>"</span> <span>value</span><span>=</span><span>"</span><span>3</span><span>"</span> <span>/</span><span>></span>
+                  <span><</span><span>label</span> <span>for</span><span>=</span><span>"</span><span>star3</span><span>"</span> <span>title</span><span>=</span><span>"</span><span>text</span><span>"</span><span>></span><span>3 stars</span><span><</span><span>/</span><span>label</span><span>></span>
+                  <span><</span><span>div</span> <span>class</span><span>=</span><span>"</span><span>rate</span><span>"</span><span>></span>
+                  <span><</span><span>input</span> <span>type</span><span>=</span><span>"</span><span>radio</span><span>"</span> <span>id</span><span>=</span><span>"</span><span>star2</span><span>"</span> <span>name</span><span>=</span><span>"</span><span>rate</span><span>"</span> <span>value</span><span>=</span><span>"</span><span>2</span><span>"</span> <span>/</span><span>></span>
+                  <span><</span><span>label</span> <span>for</span><span>=</span><span>"</span><span>star2</span><span>"</span> <span>title</span><span>=</span><span>"</span><span>text</span><span>"</span><span>></span><span>2 stars</span><span><</span><span>/</span><span>label</span><span>></span>
+                  <span><</span><span>div</span> <span>class</span><span>=</span><span>"</span><span>rate</span><span>"</span><span>></span>
+                  <span><</span><span>input</span> <span>type</span><span>=</span><span>"</span><span>radio</span><span>"</span> <span>id</span><span>=</span><span>"</span><span>star1</span><span>"</span> <span>name</span><span>=</span><span>"</span><span>rate</span><span>"</span> <span>value</span><span>=</span><span>"</span><span>1</span><span>"</span> <span>/</span><span>></span>
+                  <span><</span><span>label</span> <span>for</span><span>=</span><span>"</span><span>star1</span><span>"</span> <span>title</span><span>=</span><span>"</span><span>text</span><span>"</span><span>></span><span>1 star</span><span><</span><span>/</span><span>label</span><span>></span>
+                   <span><</span><span>/</span><span>div</span><span>></span>  
+              </code>
+          </pre>
+          </div>
+        </div>
+    </div>
+     </div>
+  
+    <!--Grids
+     <div class="grids"><h2>Grids</h2>
+     <p>Grid layout enables an author to align elements into columns and rows</p>
+     <div><h3>Example:</h3>
+        <div class="row">
+            <div class="column" style="background-color:#aaa;">
+              <h2>Bellatrix 1</h2>
+              <p>Some text..</p>
+            </div>
+            <div class="column" style="background-color:#bbb;">
+              <h2>Bellatrix 2</h2>
+              <p>Some text..</p>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="column" style="background-color:#ccc;">
+              <h2>Bellatrix 3</h2>
+              <p>Some text..</p>
+            </div>
+            <div class="column" style="background-color:#ddd;">
+              <h2>Bellatrix 4</h2>
+              <p>Some text..</p>
+            </div>
+          </div>
+          <div><h3>Code:</h3>
+            <div class="code-box">
+              <button class="copy-clip" onclick="myFunction()">Copy</button>
+              Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ra
+            </div>
+          </div>
+    </div>
+    </div> -->
+
+
+  
+    <!--Cards-->
+    <div class="card-layout"><h2>Card</h2>
+      <p>A flexible and extensible content container with multiple variants and options.</p>
+      <div><h3>Example:</h3>
+          <div class="normal-card">
+              <h3>Normal Card</h3>
+              <div class="normal-container">
+                <h4><b>Miss Bellatrix </b></h4>
+                <p> Maecenas sagittis aliquet massa, sed aliquet augue elementum eu. Morbi egestas ligula erat, et pretium libero efficitur sit amet. Maecenas eu augue bibendum, egestas eros ut, consequat enim. Quisque scelerisque justo odio, sit amet suscipit tellus finibus quis. Vestibulum rhoncus malesuada ligula a rhoncus. Vestibulum et tortor ac felis dapibus dapibus. Quisque ultricies non neque sed gravida. Nam dignissim .</p>
+              </div>
+            </div>
+            <div class="normal-code"><h3>Code:</h3>
+              <div class="code-box">
+                <button class="copy-clip" onclick="myFunction()">Copy</button>
+                <div class="snippet">
+                  <pre>
+                    <code>
+                        <span><</span><span>div</span> <span>class</span><span>=</span><span>"</span><span>normal-card</span><span>"</span><span>></span>
+                            <span><</span><span>div</span> <span>class</span><span>=</span><span>"</span><span>normal-container</span><span>"</span><span>></span>
+                                <span><</span><span>h4</span><span>></span><span><</span><span>b</span><span>></span><span>Miss Bellatrix</span><span><</span><span>/</span><span>b</span><span>></span><span><</span><span>/</span><span>h4</span><span>></span>
+                                <span><</span><span>p</span><span>></span><span>Maecenas sagittis aliquet massa, sed aliquet augue
+                                 elementum eu. Morbi egestas ligula erat, et pretium libero efficitur sit amet. 
+                                 Maecenas eu augue bibendum, egestas eros ut, consequat enim. Quisque 
+                                 scelerisque justo odio, sit amet suscipit tellus finibus quis. 
+                                 Vestibulum rhoncus malesuada ligula a rhoncus. 
+                                 Vestibulum et tortor ac felis dapibus dapibus. 
+                                 Quisque ultricies non neque sed gravida. Nam dignissim .</span> <span><</span><span>/</span><span>p</span><span>></span>
+                            <span><</span><span>/</span><span>div</span><span>></span>
+                        <span><</span><span>/</span><span>div</span><span>></span>
+                    </code>
+                </pre>
+                </div>
+              </div>
+            </div>
+      </div>
+    
+     <!-- <div class="dismiss-row">
+          <h3>Card with Dismiss Button</h3>
+          <div class="dismiss-card">
+              <div class="thumbnail">
+                  <img src="https://via.placeholder.com/150">
+                  <button class="rem">❌</button>
+              </div>
+              <h1>Bellatrix</h1>
+             <p>
+              Maecenas sagittis aliquet massa, sed aliquet augue elementum eu. Morbi egestas ligula erat, et pretium libero efficitur sit amet. Maecenas eu augue bibendum, egestas eros ut, consequat enim. Quisque scelerisque justo odio, sit amet suscipit tellus finibus quis. Vestibulum rhoncus malesuada ligula a rhoncus. Vestibulum et tortor ac felis dapibus dapibus. Quisque ultricies non neque sed gravida. Nam dignissim .
+          </p>
+          <button>Click Here</button></div>
+          </div>
+          <div><h3>Code:</h3>
+            <div class="code-box">
+              <button class="copy-clip" onclick="myFunction()">Copy</button>
+              Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ra
+            </div>
+          </div>
+      </div> -->
+
+
+      <h3>Profile Card</h3>
+      <div class="profile-card">
+          <img src="/images/image3.svg" alt="John" style="width:100%">
+          <h1 style="color: #137B48;">Bellatrix</h1>
+          <p style="color: #137B48;">Third-brightest star in the constellation of Orion</p>
+          <p style="color: #137B48;"> Blue-White Star </p>
+          <div class="favicon">
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          </div>
+          <p><button class="profile-button">Contact</button></p>
+        </div>
+        <div><h3>Code:</h3>
+          <div class="code-box">
+            <button class="copy-clip" onclick="myFunction()">Copy</button>
+            <pre>
+              <code>
+  
+                  <span><</span><span>link</span> <span>rel</span><span>=</span><span>"stylesheet"</span> <span>href</span><span>=</span><span>"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"</span><span>></span>
+                  
+  
+                  <span><</span><span>div</span> <span>class</span><span>=</span><span>"profile-card"</span><span>></span>
+                      <span><</span><span>img</span> <span>src</span><span>=</span><span>"/images/image3.svg"</span> <span>style</span><span>=</span><span>"width:100%"</span><span>></span>
+                      <span><</span><span>h1</span><span>></span><span>Bellatrix</span><span><</span><span>/</span><span>h1</span><span>></span>
+                      <span><</span><span>p</span><span>></span><span>Third-brightest star in the constellation of Orion</span><span><</span><span>/</span><span>p</span><span>></span>
+                      <span><</span><span>p</span><span>></span><span>Blue-White Star</span><span><</span><span>/</span><span>p</span><span>></span>
+                      <span><</span><span>div</span> <span>class</span><span>=</span><span>"</span><span>favicon</span><span>"</span><span>></span>
+                          <span><</span><span>a</span> <span>href</span><span>=</span><span>"</span><span>#</span><span>"</span><span>></span><span><</span><span>i</span> <span>class</span><span>=</span><span>"fa fa-dribble"</span><span>></span><span><</span><span>/</span><span>i</span><span>></span><span><</span><span>/</span><span>a</span><span>></span>
+                          <span><</span><span>a</span> <span>href</span><span>=</span><span>"</span><span>#</span><span>"</span><span>></span><span><</span><span>i</span> <span>class</span><span>=</span><span>"fa fa-twitter"</span><span>></span><span><</span><span>/</span><span>i</span><span>></span><span><</span><span>/</span><span>a</span><span>></span>
+                          <span><</span><span>a</span> <span>href</span><span>=</span><span>"</span><span>#</span><span>"</span><span>></span><span><</span><span>i</span> <span>class</span><span>=</span><span>"fa fa-linkedin"</span><span>></span><span><</span><span>/</span><span>i</span><span>></span><span><</span><span>/</span><span>a</span><span>></span>
+                          <span><</span><span>a</span> <span>href</span><span>=</span><span>"</span><span>#</span><span>"</span><span>></span><span><</span><span>i</span> <span>class</span><span>=</span><span>"fa fa-facebook"</span><span>></span><span><</span><span>/</span><span>i</span><span>></span><span><</span><span>/</span><span>a</span><span>></span>
+                      <span><</span><span>/</span><span>div</span><span>></span>
+                      <span><</span><span>p</span><span>></span><span><</span><span>button</span> <span>class</span><span>=</span><span>"profile-button"</span><span>></span><span>Contact</span><span><</span><span>/</span><span>button</span><span>></span><span><</span><span>/</span><span>p</span><span>></span>
+                  <span><</span><span>/</span><span>div</span><span>></span>
+              </code>
+          </pre>
+  
+          </div></div>
+    
+        <h3> Product Card</h3>
+        <div class="product-card">
+          <img src="/images/image4.svg"  style="width:100%">
+          <h1>Bellatrix Phone</h1>
+          <p class="price">$200.00</p>
+          <p>Now get every detail about stars in your Phone</p>
+          <p><button class="product-btn">Add to Cart</button></p>
+        </div>
+        <div><h3>Code:</h3>
+          <div class="code-box">
+            <button class="copy-clip" onclick="myFunction()">Copy</button>
+            <pre>
+              <code>
+                  <span><</span><span>div</span> <span>class</span><span>=</span><span>"</span><span>product-card</span><span>"</span><span>></span>
+                      <span><</span><span>img src</span><span>=</span><span>"</span><span>/images/image4.svg</span><span>"</span> <span>style</span><span>=</span><span>"</span><span>width:100%</span><span>"</span><span>></span>
+                      <span><</span><span>h1</span><span>></span><span>Bellatrix phone</span><span><</span><span>/</span><span>h1</span><span>></span>
+                      <span><</span><span>p</span> <span>class</span><span>=</span><span>"price"</span><span>></span><span>$200.00</span><span><</span><span>/</span><span>p</span><span>></span>
+                      <span><</span><span>p</span><span>></span><span>Now get every detail about stars in your Phone</span><span><</span><span>/</span><span>p</span><span>></span>
+                      <span><</span><span>p</span><span>></span><span><</span><span>button</span> <span>class</span><span>=</span><span>"product-btn"</span><span>></span><span>Add to Cart</span><span><</span><span>/</span><span>button</span><span>></span><span><</span><span>/</span><span>p</span><span>></span>
+                  <span><</span><span>/</span><span>div</span><span>></span>
+              </code>
+          </pre>
+          </div>
+        </div>
+      </div>
+    
+      <!--Image
+      <div class="image-layout"><h2>Image</h2>
+      <p>The Image component is used to display images.Documentation and examples for opting images into responsive behavior (so they never become larger than their parent elements) and add lightweight styles to them—all via classes.</p>
+      <div><h3>Example:</h3>
+          <img src="/images/Image3.svg" class="responsive">
+      </div>
+      <div><h3>Code:</h3>
+        <div class="code-box">
+          <button class="copy-clip" onclick="myFunction()">Copy</button>
+          Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+  "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ra
+        </div>
+      </div>
+      </div>-->
+    
+      <!--Input-->
+      <div class="input-layout"><h2>Input</h2>
+      <p>The Input component is a component that is used to get user input in a text field.</p>
+      <div><h3>Example:</h3>
+        <form>
+          <h2>Register Form/Stacked Form</h2>
+          <div class="container">
+        
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email" id="email" required><br>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+            <button type="submit" class="btn">Register</button>
+          </div>
+        </form>
+        <div><h3>Code:</h3>
+          <div class="code-box">
+            <button class="copy-clip" onclick="myFunction()">Copy</button>
+            <pre>
+              <code>
+                  <span><</span><span>form</span><span>></span>
+                      <span><</span><span>h2</span><span>></span><span>Register Form/Stacked Form</span><span><</span><span>/</span><span>h2</span><span>></span>
+                      <span><</span><span>div</span> <span>class</span><span>=</span><span>"container"</span><span>></span>
+                      
+                           <span><</span><span>label</span><span>for</span><span>=</span><span>"email"</span><span>></span><span><</span><span>b</span><span>></span><span>Email</span><span><</span><span>/</span><span>b</span><span>></span><span><</span><span>/</span><span>label</span><span>></span>
+                           <span><</span><span>input</span> <span>type</span><span>=</span><span>"email"</span> <span>placeholder</span><span>=</span><span>"Enter Email"</span> <span>name</span><span>=</span><span>"email"</span> <span>id</span><span>=</span><span>"email"</span> <span>required</span><span>></span><span><</span><span>br</span><span>></span>
+                        
+                            <span><</span><span>label</span><span>for</span><span>=</span><span>"psw"</span><span>></span><span><</span><span>b</span><span>></span><span>Password</span><span><</span><span>/</span><span>b</span><span>></span><span><</span><span>/</span><span>label</span><span>></span>
+                            <span><</span><span>input</span> <span>type</span><span>=</span><span>"password"</span> <span>placeholder</span><span>=</span><span>"Enter Password"</span> <span>name</span><span>=</span><span>"psw"</span> <span>id</span><span>=</span><span>"psw"</span> <span>required</span><span>></span><span><</span><span>br</span><span>></span>
+                        
+                            <span><</span><span>label</span><span>for</span><span>=</span><span>"psw-repeat"</span><span>></span><span><</span><span>b</span><span>></span><span>Repeat Password</span><span><</span><span>/</span><span>b</span><span>></span><span><</span><span>/</span><span>label</span><span>></span>
+                            <span><</span><span>input</span> <span>type</span><span>=</span><span>"password"</span> <span>placeholder</span><span>=</span><span>"Repeat Password"</span> <span>name</span><span>=</span><span>"psw-repeat"</span> <span>id</span><span>=</span><span>"psw-repeat"</span> <span>required</span><span>></span><span><</span><span>br</span><span>></span>
+                        
+                    
+                            <span><</span><span>button</span> <span>type</span><span>=</span><span>"submit"</span> <span>class</span><span>=</span><span>"btn"</span><span>></span><span>Register</span><span><</span><span>/</span><span>button</span><span>></span> 
+  
+                      <span><</span><span>/</span><span>div</span><span>></span>      
+                  <span><</span><span>/</span><span>form</span><span>></span>
+              </code>
+          </pre>
+          </div>
+        </div>
+        <form>
+          <h2>Form with Icons</h2>
+          <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input class="input-field" type="text" placeholder="Username" name="usrnm" required>
+          </div>
+        
+          <div class="input-container">
+            <i class="fa fa-envelope icon"></i>
+            <input class="input-field" type="email" placeholder="Email" name="email" required>
+          </div>
+        
+          <div class="input-container">
+            <i class="fa fa-key icon"></i>
+            <input class="input-field" type="password" placeholder="Password" name="psw" required>
+          </div>
+        
+          <button type="submit" class="btn">Register</button>
+        </form>
+    
+        <div><h3>Code:</h3>
+          <div class="code-box">
+            <button class="copy-clip" onclick="myFunction()">Copy</button>
+            <pre>
+              <code>
+  
+                  <span><</span><span>link</span> <span>rel</span><span>=</span><span>"stylesheet"</span> <span>href</span><span>=</span><span>"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"</span><span>></span>
+  
+  
+                  <span><</span><span>form</span><span>></span>
+                      <span><</span><span>div</span> <span>class</span><span>=</span><span>"input-container"</span><span>></span> 
+                          <span><</span><span>i</span> <span>class</span><span>=</span><span>"fa fa-user icon"</span><span>></span><span><</span><span>/</span><span>i</span><span>></span>
+                          <span><</span><span>input</span> <span>class</span><span>=</span><span>"input-field"</span> <span>type</span><span>=</span><span>"text"</span> <span>placeholder</span><span>=</span><span>"Username"</span> <span>name</span><span>=</span><span>"usrnm"</span> <span>required</span><span>></span>
+                      <span><</span><span>/</span><span>div</span><span>></span>
+                  
+                    
+                      <span><</span><span>div</span> <span>class</span><span>=</span><span>"input-container"</span><span>></span> 
+                      <span><</span><span>i</span> <span>class</span><span>=</span><span>"fa fa-envelope icon"</span><span>></span><span><</span><span>/</span><span>i</span><span>></span>
+                      <span><</span><span>input</span> <span>class</span><span>=</span><span>"input-field"</span> <span>type</span><span>=</span><span>"email"</span> <span>placeholder</span><span>=</span><span>"Email"</span> <span>name</span><span>=</span><span>"email"</span> <span>required</span><span>></span>
+                       <span><</span><span>/</span><span>div</span><span>></span>
+              
+                     
+                       <span><</span><span>div</span> <span>class</span><span>=</span><span>"input-container"</span><span>></span> 
+                      <span><</span><span>i</span> <span>class</span><span>=</span><span>"fa fa-key icon"</span><span>></span><span><</span><span>/</span><span>i</span><span>></span>
+                      <span><</span><span>input</span> <span>class</span><span>=</span><span>"input-field"</span> <span>type</span><span>=</span><span>"password"</span> <span>placeholder</span><span>=</span><span>"Password"</span> <span>name</span><span>=</span><span>"psw"</span> <span>required</span><span>></span>
+                       <span><</span><span>/</span><span>div</span><span>></span>
+          
+                    
+                      <span><</span><span>button</span> <span>type</span><span>=</span><span>"submit"</span> <span>class</span><span>=</span><span>"btn"</span><span>></span><span>Register</span><span><</span><span>/</span><span>button</span><span>></span>
+                    
+                  <span><</span><span>/</span><span>form</span><span>></span>
+              </code>
+          </pre>
+          </div>
+        </div>
+    
+        <h2>Responsive Form</h2>
+        <div class="container">
+          <form>
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">First Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Last Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="country">Country</label>
+              </div>
+              <div class="col-75">
+                <select id="country" name="country">
+                    <option value="india">India</option>
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Subject</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+    
+        <div><h3>Code:</h3>
+          <div class="code-box">
+            <button class="copy-clip" onclick="myFunction()">Copy</button>
+            <pre>
+              <code>
+                  <span><</span><span>div</span> <span>class</span><span>=</span><span>"container"</span><span>></span>
+                      <span><</span><span>form</span><span>></span>
+                          <span><</span><span>div</span> <span>class</span><span>=</span><span>"row"</span><span>></span>
+                              <span><</span><span>div</span> <span>class</span><span>=</span><span>"col-25"</span><span>></span>
+                                  <span><</span><span>label</span> <span>for</span><span>=</span><span>"fname"</span><span>></span><span>First Name</span><span><</span><span>/</span><span>label</span><span>></span>
+                              <span><</span><span>/</span><span>div</span><span>></span>
+                              <span><</span><span>div</span> <span>class</span><span>=</span><span>"col-75"</span><span>></span>
+                                  <span><</span><span>input</span> <span>type</span><span>=</span><span>"text"</span> <span>id</span><span>=</span><span>"fname"</span> <span>name</span><span>=</span><span>"firstname"</span> <span>placeholder</span><span>=</span><span>"Your name..."</span> <span>required</span><span>></span>
+                              <span><</span><span>/</span><span>div</span><span>></span>
+                          <span><</span><span>/</span><span>div</span><span>></span>
+  
+  
+                          <span><</span><span>div</span> <span>class</span><span>=</span><span>"row"</span><span>></span>
+                              <span><</span><span>div</span> <span>class</span><span>=</span><span>"col-25"</span><span>></span>
+                                  <span><</span><span>label</span> <span>for</span><span>=</span><span>"lname"</span><span>></span><span>Last Name</span><span><</span><span>/</span><span>label</span><span>></span>
+                              <span><</span><span>/</span><span>div</span><span>></span>
+                              <span><</span><span>div</span> <span>class</span><span>=</span><span>"col-75"</span><span>></span>
+                                  <span><</span><span>input</span> <span>type</span><span>=</span><span>"text"</span> <span>id</span><span>=</span><span>"lname"</span> <span>name</span><span>=</span><span>"lastname"</span> <span>placeholder</span><span>=</span><span>"Your last name"</span> <span>required</span><span>></span>
+                              <span><</span><span>/</span><span>div</span><span>></span>
+                          <span><</span><span>/</span><span>div</span><span>></span>
+  
+                          <span><</span><span>div</span> <span>class</span><span>=</span><span>"row"</span><span>></span>
+                          <span><</span><span>div</span> <span>class</span><span>=</span><span>"col-25"</span><span>></span>
+                              <span><</span><span>label</span> <span>for</span><span>=</span><span>"country"</span><span>></span><span>Country</span><span><</span><span>/</span><span>label</span><span>></span>
+                          <span><</span><span>/</span><span>div</span><span>></span>
+                          <span><</span><span>div</span> <span>class</span><span>=</span><span>"col-75"</span><span>></span>
+                              <span><</span><span>select</span> <span>id</span><span>=</span><span>"country"</span> <span>name</span><span>=</span><span>"country"</span><span>></span>
+                              <span><</span><span>option</span> <span>value</span><span>=</span><span>"india"</span><span>></span><span>India</span><span><</span><span>/</span><span>option</span><span>></span> 
+                              <span><</span><span>option</span> <span>value</span><span>=</span><span>"australia"</span><span>></span><span>Australia</span><span><</span><span>/</span><span>option</span><span>></span> 
+                              <span><</span><span>option</span> <span>value</span><span>=</span><span>"canada"</span><span>></span><span>Canada</span><span><</span><span>/</span><span>option</span><span>></span> 
+                              <span><</span><span>option</span> <span>value</span><span>=</span><span>"usa"</span><span>></span><span>USA</span><span><</span><span>/</span><span>option</span><span>></span>           
+                          <span><</span><span>/</span><span>select</span><span>></span>
+                      <span><</span><span>/</span><span>div</span><span>></span>
+                  <span><</span><span>/</span><span>div</span><span>></span>   
+                  <span><</span><span>div</span> <span>class</span><span>=</span><span>"row"</span><span>></span>  
+                      <span><</span><span>div</span> <span>class</span><span>=</span><span>"col-25"</span><span>></span>
+                          <span><</span><span>label</span> <span>for</span><span>=</span><span>"subject"</span><span>></span><span>Subject</span><span><</span><span>/</span><span>label</span><span>></span>
+                      <span><</span><span>/</span><span>div</span><span>></span>                 
+                      <span><</span><span>div</span> <span>class</span><span>=</span><span>"col-75"</span><span>></span>
+                      <span><</span><span>textarea</span> <span>id</span><span>=</span><span>"subject"</span> <span>name</span><span>=</span><span>"subject"</span> <span>placeholder</span><span>=</span><span>"Write something.."</span> <span>style</span><span>=</span><span>"height:200px"</span><span>></span><span><</span><span>/</span><span>textarea</span><span>></span>                  
+                          <span><</span><span>/</span><span>div</span><span>></span>
+                          <span><</span><span>/</span><span>div</span><span>></span>
+                        <span><</span><span>div</span> <span>class</span><span>=</span><span>"row"</span><span>></span>  
+                        <span><</span><span>input</span> <span>type</span><span>=</span><span>"submit"</span> <span>value</span><span>=</span><span>"Submit"</span><span>></span>
+                          <span><</span><span>/</span><span>div</span><span>></span>
+                        <span><</span><span>/</span><span>form</span><span>></span>
+                  <span><</span><span>/</span><span>div</span><span>></span> 
+              </code>
+          </pre>
+          </div>
+        </div>
+    
+        <h2>Pop Up Form</h2>
+        <div class="form-popup" id="myForm">
+          <form class="form-container">
+            <h1>Login</h1>
+        
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+    
+        <div><h3>Code:</h3>
+          <div class="code-box">
+            <button class="copy-clip" onclick="myFunction()">Copy</button>
+            <pre>
+              <code>
+                  <span><</span><span>div</span> <span>class</span><span>=</span><span>"form-popup"</span> <span>id</span><span>=</span><span>"myForm"</span><span>></span>
+                      <span><</span><span>form</span> <span>class</span><span>=</span><span>"form-container"</span><span>></span>
+                      <span><</span><span>h1</span><span>></span><span>Login</span><span><</span><span>/</span><span>h1</span><span>></span>
+                        
+  
+                           <span><</span><span>label</span> <span>for</span><span>=</span><span>"email"</span><span>></span><span><</span><span>b</span><span>></span><span>Email</span><span><</span><span>/</span><span>b</span><span>></span><span><</span><span>/</span><span>label</span><span>></span>
+                          <span><</span><span>input</span> <span>type</span><span>=</span><span>"email"</span> <span>placeholder</span><span>=</span><span>"Enter Email"</span> <span>name</span><span>=</span><span>"email"</span> <span>required</span><span>></span>
+                    
+                          <span><</span><span>label</span> <span>for</span><span>=</span><span>"psw"</span><span>></span><span><</span><span>b</span><span>></span><span>Password</span><span><</span><span>/</span><span>b</span><span>></span><span><</span><span>/</span><span>label</span><span>></span>
+                          <span><</span><span>input</span> <span>type</span><span>=</span><span>"password"</span> <span>placeholder</span><span>=</span><span>"Enter Password"</span> <span>name</span><span>=</span><span>"psw"</span> <span>required</span><span>></span>
+                      
+                          <span><</span><span>button</span> <span>type</span><span>=</span><span>"submit"</span> <span>class</span><span>=</span><span>"btn"</span><span>></span><span>Login</span><span><</span><span>/</span><span>button</span><span>></span>
+                          <span><</span><span>button</span> <span>type</span><span>=</span><span>"submit"</span> <span>class</span><span>=</span><span>"btn cancel"</span> <span>onclick</span><span>=</span><span>"closeForm()"</span><span>></span><span>Close</span><span><</span><span>/</span><span>button</span><span>></span>
+                    
+                      <span><</span><span>/</span><span>form</span><span>></span>
+                  <span><</span><span>/</span><span>div</span><span>></span>
+              </code>
+          </pre>
+          </div>
+        </div>
+      </div>
+      </div>
+    
+    
+    <!--Lists-->
+    <div class="list-layout"><h2>Lists</h2>
+      <p>List component is used to display list items. It renders a ul element by default.</p>
+      <div><h3>Example:</h3>
+        <h2>Inline Lists</h2>
+        <ul class="inline-list" >
+            <li class="inline-items"><a href="#" class="inline-link link-active">Home</a> </li>
+            <li class="inline-items"><a href="#" class="inline-link">Docs</a> </li>
+            <li class="inline-items"><a href="#" class="inline-link">About Me</a> </li>
+        </ul>
+        <div><h3>Code:</h3>
+          <div class="code-box">
+            <button class="copy-clip" onclick="myFunction()">Copy</button>
+            <pre>
+              <code>
+                  <span><</span><span>ul</span> <span>class</span><span>=</span><span>"inline-list"</span><span>></span>
+                      <span><</span><span>li</span> <span>class</span><span>=</span><span>"inline-items"</span><span>></span><span><</span><span>a</span> <span>href</span><span>=</span><span>"#"</span> <span>class</span><span>=</span><span>"inline-link link-active"</span><span>></span><span>Home</span><span><</span><span>/</span><span>a</span><span>></span><span><</span><span>/</span><span>li</span><span>></span>
+                      <span><</span><span>li</span> <span>class</span><span>=</span><span>"inline-items"</span><span>></span><span><</span><span>a</span> <span>href</span><span>=</span><span>"#"</span> <span>class</span><span>=</span><span>"inline-link"</span><span>></span><span>Docs</span><span><</span><span>/</span><span>a</span><span>></span><span><</span><span>/</span><span>li</span><span>></span>
+                      <span><</span><span>li</span> <span>class</span><span>=</span><span>"inline-items"</span><span>></span><span><</span><span>a</span> <span>href</span><span>=</span><span>"#"</span> <span>class</span><span>=</span><span>"inline-link"</span><span>></span><span>About Me</span><span><</span><span>/</span><span>a</span><span>></span><span><</span><span>/</span><span>li</span><span>></span>
+                  <span><</span><span>/</span><span>ul</span><span>></span>
+              </code>
+          </pre>
+          </div>
+        </div>
+    
+        <h2>Stacked Lists</h2>
+        <div class="stack-list">
+         <ul>
+             <li style="list-style: none;">About Me</li>
+             <li style="list-style: none;">Docs</li>
+             <li style="list-style: none;" >Home</li>
+         </ul>
+        </div>
+        <div><h3>Code:</h3>
+          <div class="code-box">
+            <button class="copy-clip" onclick="myFunction()">Copy</button>
+            <pre>
+              <code>
+                  <span><</span><span>div</span> <span>class</span><span>=</span><span>"stack-list"</span><span>></span>
+                      <span><</span><span>ul</span><span>></span>
+                          <span><</span><span>li</span> <span>style</span><span>=</span><span>"list-style: none;"</span><span>></span><span>About Me</span><span><</span><span>/</span><span>li</span><span>></span>
+                          <span><</span><span>li</span> <span>style</span><span>=</span><span>"list-style: none;"</span><span>></span><span>Docs</span><span><</span><span>/</span><span>li</span><span>></span>
+                          <span><</span><span>li</span> <span>style</span><span>=</span><span>"list-style: none;"</span><span>></span><span>Home</span><span><</span><span>/</span><span>li</span><span>></span>
+                      <span><</span><span>/</span><span>ul</span><span>></span>
+                  <span><</span><span>/</span><span>div</span><span>></span>     
+              </code>
+          </pre>
+          </div>
+        </div>
+      </div>
+      </div>
+    
+    
+    
+      <!--Navigation Bars-->
+      <div class="navigation-layout"><h2>Navigation</h2>
+      <p>A navigation bar is an element within a webpage that contains links to other sections of the website</p>
+      <div><h3>Example:</h3>
+        <h2>Side Navigation Bar</h2>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+        <!-- Use any element to open the sidenav -->
+        <button onclick="openNav()">Open SideNavbar</button>
+        <div><h3>Code:</h3>
+          <div class="code-box">
+            <button class="copy-clip" onclick="myFunction()">Copy</button>
+            <pre>
+              <code>
+                  <span><</span><span>div</span> <span>id</span><span>=</span><span>"mySidenav"</span> <span>class</span><span>=</span><span>"sidenav"</span><span>></span>
+                      <span><</span><span>a</span> <span>href</span><span>=</span><span>"javascript:void(0)"</span> <span>class</span><span>=</span><span>"closebtn"</span> <span>onclick</span><span>=</span><span>"closeNav()"</span><span>></span><span>&</span><span>times;</span><span><</span><span>/</span><span>a</span><span>></span>
+                      <span><</span><span>a</span> <span>href</span><span>=</span><span>"#"</span><span>></span><span>About</span><span><</span><span>/</span><span>a</span><span>></span>
+                      <span><</span><span>a</span> <span>href</span><span>=</span><span>"#"</span><span>></span><span>Services</span><span><</span><span>/</span><span>a</span><span>></span>
+                      <span><</span><span>a</span> <span>href</span><span>=</span><span>"#"</span><span>></span><span>Clients</span><span><</span><span>/</span><span>a</span><span>></span>
+                      <span><</span><span>a</span> <span>href</span><span>=</span><span>"#"</span><span>></span><span>Contact</span><span><</span><span>/</span><span>a</span><span>></span>
+                  <span><</span><span>/</span><span>div</span><span>></span>   
+                   <span><</span><span>button</span> <span>onclick</span><span>=</span><span>"openNav()"</span><span>></span><span>Open SideNavbar</span><span><</span><span>/</span><span>button</span><span>></span>
+              </code>
+          </pre>
+          </div>
+        </div>
+    
+        <h2>Thick Navigation Bar</h2>
+        <div class="thick-navbar">
+          <nav>
+              <div class="thick-nav-heading">Bellatrix</div>
+              <ul class="list" >
+                  <li class="inline-top"><a href="#" class="link link-active">Home</a> </li>
+                  <li class="inline-top"><a href="#" class="link">Projects</a> </li>
+                  <li class="inline-top"><a href="#" class="link">Blogs</a> </li>
+              </ul>
+          </nav>
+        </div>
+        <div><h3>Code:</h3>
+          <div class="code-box">
+            <button class="copy-clip" onclick="myFunction()">Copy</button>
+            <pre>
+              <code>
+                  <span><</span><span>div</span> <span>class</span><span>=</span><span>"thick-navbar"</span><span>></span>
+                      <span><</span><span>nav</span><span>></span>
+                      <span><</span><span>div</span> <span>class</span><span>=</span><span>"thick-nav-heading"</span><span>></span><span>Bellatrix</span><span><</span><span>/</span><span>div</span><span>></span>
+                      <span><</span><span>ul</span> <span>class</span><span>=</span><span>"list"</span><span>></span>
+                          <span><</span><span>li</span> <span>class</span><span>=</span><span>"inline-top"</span><span>></span><span><</span><span>a</span> <span>href</span><span>=</span><span>"#"</span> <span>class</span><span>=</span><span>"link link-active"</span><span>></span><span>Home</span><span><</span><span>/</span><span>a</span><span>></span><span><</span><span>/</span><span>li</span><span>></span>
+                          <span><</span><span>li</span> <span>class</span><span>=</span><span>"inline-top"</span><span>></span><span><</span><span>a</span> <span>href</span><span>=</span><span>"#"</span> <span>class</span><span>=</span><span>"link"</span><span>></span><span>Projects</span><span><</span><span>/</span><span>a</span><span>></span><span><</span><span>/</span><span>li</span><span>></span>
+                          <span><</span><span>li</span> <span>class</span><span>=</span><span>"inline-top"</span><span>></span><span><</span><span>a</span> <span>href</span><span>=</span><span>"#"</span> <span>class</span><span>=</span><span>"link"</span><span>></span><span>Blogs</span><span><</span><span>/</span><span>a</span><span>></span><span><</span><span>/</span><span>li</span><span>></span>
+                      <span><</span><span>/</span><span>ul</span><span>></span>      
+                      <span><</span><span>/</span><span>nav</span><span>></span>          
+                  <span><</span><span>/</span><span>div</span><span>></span>       
+              </code>
+          </pre>
+          </div>
+        </div>
+    
+        <h2>Thin Navigation Bar</h2>
+      <div class="thin-navbar">
+          <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+          <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+          <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+          <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+        </div>
+        <div><h3>Code:</h3>
+          <div class="code-box">
+            <button class="copy-clip" onclick="myFunction()">Copy</button>
+            <pre>
+              <code>
+                  <span><</span><span>link</span> <span>rel</span><span>=</span><span>"stylesheet"</span> <span>href</span><span>=</span><span>"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"</span><span>></span>
+  
+  
+                  <span><</span><span>div</span> <span>class</span><span>=</span><span>"thin-navbar"</span><span>></span>
+                      <span><</span><span>a</span> <span>class</span><span>=</span><span>"active"</span> <span>href</span><span>=</span><span>"</span><span>#</span><span>"</span><span>></span><span><</span><span>i</span> <span>class</span><span>=</span><span>"fa fa-fw fa-home"</span><span>></span><span><</span><span>/</span><span>i</span><span>></span>Home<span><</span><span>/</span><span>a</span><span>></span>
+                      <span><</span><span>a</span> <span>href</span><span>=</span><span>"</span><span>#</span><span>"</span><span>></span><span><</span><span>i</span> <span>class</span><span>=</span><span>"fa fa-fw fa-search"</span><span>></span><span><</span><span>/</span><span>i</span><span>></span>Search<span><</span><span>/</span><span>a</span><span>></span>
+                      <span><</span><span>a</span> <span>href</span><span>=</span><span>"</span><span>#</span><span>"</span><span>></span><span><</span><span>i</span> <span>class</span><span>=</span><span>"fa fa-fw fa-envelope"</span><span>></span><span><</span><span>/</span><span>i</span><span>></span>Contact<span><</span><span>/</span><span>a</span><span>></span>
+                      <span><</span><span>a</span> <span>href</span><span>=</span><span>"</span><span>#</span><span>"</span><span>></span><span><</span><span>i</span> <span>class</span><span>=</span><span>"fa fa-fw fa-user"</span><span>></span><span><</span><span>/</span><span>i</span><span>></span>Login<span><</span><span>/</span><span>a</span><span>></span>
+                  <span><</span><span>/</span><span>div</span><span>></span> 
+              </code>
+          </pre>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+  
+  
+   </div>
+   
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Take me to Top ⬆️</button>
+    <script src="/mainapp.js"></script>
+    <script src="/components/app.js"></script>
+
+</body>
+</html>
